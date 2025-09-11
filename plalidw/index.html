@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/fcfe1b6a8f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <nav>
+          <h1>TobyNaja</h1>
+            <div class="menu">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Competition</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="header-text">
+                <p>IT KMITL</p>
+                <h1><span>Hi, I'm</span> <span id="type"></span></h1>
+                <p>Information Technology <br> King Mongkut's Institute of Technology Ladkrabang</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="mahiru.png" alt="Profile Picture" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello! My name is Toby. I am 19 years old and currently interested in technology, especially network infrastructure and cybersecurity solutions.I enjoy learning how computer networks work, setting up servers, and exploring system administration.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('competition')">Competition</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Arduino</span><br />Creating custom hardware projects.</li>
+                            <li><span>Cisco Packet Tracer</span><br />Simulating and modeling networks.</li>
+                            <li><span>Web Development</span><br />Building responsive websites.</li>
+                            <li><span>Python</span><br />Scripting and automation.</li>
+                            <li><span>Canva</span><br />Designing visual assets.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="competition">
+                        <ul>
+                            <li><span>Arduino Education Day Thailand 2023</span></li>
+                            <li><span>THAILAND CYBER TOP TALENT 2023</span></li>
+                            <li><span>SAMSUNG SOLVE FOR TOMORROW 2023</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Elementary</span><br />Piyachit Witthaya School</li>
+                            <li><span>Middle School</span><br />Triam Udom Suksa Pattanakarn Suvarnabhumi (Gifted Program)</li>
+                            <li><span>High School</span><br />Triam Udom Suksa Pattanakarn Suvarnabhumi (Science-Math)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Arduino</h2>
+                    <p>I started with Arduino out of a passion for inventing. It serves as a foundation for my goal of becoming an IoT systems engineer.</p>
+                </div>
+                <div>
+                    <h2>Network</h2>
+                    <p>Introduced to Cisco Packet Tracer at IT Camp 19, I realized the importance of simulation for visualizing prototypes and have continued my learning.</p>
+                </div>
+                <div>
+                    <h2>Python</h2>
+                    <p>I began programming with Python due to its beginner-friendly syntax, which provided a great entry point into software development.</p>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Motivated by improving user experiences on the web, I taught myself HTML, CSS, and JavaScript to build my own projects, like this portfolio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Competitions</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/4.png" alt="Competition 1">
+                    <div class="layer">
+                        <h3>Arduino Day 2023</h3>
+                        <p>Participated in a showcase of innovative projects built with Arduino.</p>
+                        <a target="_blank" href="https://www.canva.com/design/DAF1ViOLqQ0/N0NSW1ygCIW9Xw2sKe_-dw/view?utm_content=DAF1ViOLqQ0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4abdd7ed27"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/5.png" alt="Competition 2">
+                    <div class="layer">
+                        <h3>Cyber Top Talent</h3>
+                        <p>Competed in the national cybersecurity challenge.</p>
+                        <a target="_blank" href="https://www.canva.com/design/DAF1ViOLqQ0/N0NSW1ygCIW9Xw2sKe_-dw/view?utm_content=DAF1ViOLqQ0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4abdd7ed27"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/7.png" alt="Competition 3">
+                    <div class="layer">
+                        <h3>Solve for Tomorrow</h3>
+                        <p>Developed a project for Samsung's innovation competition.</p>
+                        <a target="_blank" href="https://www.canva.com/design/DAF1ViOLqQ0/N0NSW1ygCIW9Xw2sKe_-dw/view?utm_content=DAF1ViOLqQ0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4abdd7ed27"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> toybbnn123@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-square-alt"></i> 0950454280</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/toybbnn.lalidwipa" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/tobynaja/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Pornpipat Lalidwipas : TobyNaja <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#type', {
+            strings: ['Pornpipat Lalidwipas.', 'a Student.', 'an Innovator.'],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true,
+        });
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
