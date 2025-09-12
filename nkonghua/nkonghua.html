@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      padding-top: 70px;
+      scroll-behavior: smooth;
+    }
+
+    .photo-placeholder {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: #e9ecef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      font-weight: 700;
+      color: #495057;
+      border: 3px solid #dee2e6;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .nav-link.active {
+      font-weight: 600;
+      color: #0d6efd !important;
+    }
+
+    @media (max-width: 575.98px) {
+      .card {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+
+    .img-container {
+      overflow: hidden;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .img-container:hover img {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Portfolio —</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
+        aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience & Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#qualify">Qualify</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="about" class="bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <div class="photo-placeholder mx-auto">NK</div>
+        </div>
+        <div class="col-md-8 m-auto mt-sm-3 ">
+          <h1 class="mb-0 text-md-start text-sm-center text-center">nkonghua.</h1>
+          <p class="lead text-muted mb-2 text-md-start text-sm-center text-center">Information Technology</p>
+          <div class="d-flex justify-content-center justify-content-md-start mt-sm-4">
+            <a class="btn btn-outline-primary btn-sm me-2" href="#experience">experience</a>
+            <a class="btn btn-outline-secondary btn-sm" href="#contact">contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="pb-0">
+    <div class="container pb-0">
+      <h2 class="mb-4">(Experience & Skills)</h2>
+
+      <div class="row g-3 mb-4">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Bebras computational thinking -Nation</h5>
+              <h6 class="card-subtitle mb-2 text-muted">2023 —</h6>
+              <p class="card-text">first runner-up bebras computational thinking challenge 2023<br>final round senior
+                high school group.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Thailand Cyber Top Talent -Nation</h5>
+              <h6 class="card-subtitle mb-2 text-muted">2023 —</h6>
+              <p class="card-text">participating no. 70 on Thailand Cyber Top Talent and participating no. 80 on group
+                Thailand Cyber Top Talent</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">4 KIBO ROBOT programming challenge -Nation</h5>
+              <h6 class="card-subtitle mb-2 text-muted">2023 —</h6>
+              <p class="card-text">participating programming on JAVA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Arduino -Nation</h5>
+              <h6 class="card-subtitle mb-2 text-muted">2023 —</h6>
+              <p class="card-text">participating programming on C and Arduino</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <h5 class="mb-2">Skills</h5>
+      <div class="mb-4">
+        <span class="badge rounded-pill border me-1 mb-1 text-muted">HTML</span>
+        <span class="badge rounded-pill border me-1 mb-1 text-muted">CSS</span>
+        <span class="badge rounded-pill border me-1 mb-1 text-muted">JavaScript</span>
+        <span class="badge rounded-pill border me-1 mb-1 text-muted">Bootstrap</span>
+        <span class="badge rounded-pill border me-1 mb-1 text-muted">Responsive Design</span>
+      </div>
+
+      <h5 class="mb-3">Skill levels</h5>
+      <div class="table-responsive ">
+        <table class="table table-bordered align-middle">
+          <thead class="table-light">
+            <tr>
+              <th>Skill</th>
+              <th>Experience (years)</th>
+              <th>Level</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML / CSS</td>
+              <td>5</td>
+              <td>Advanced</td>
+              <td>Responsive, accessibility basics</td>
+            </tr>
+            <tr>
+              <td>Bootstrap</td>
+              <td>3</td>
+              <td>Advanced</td>
+              <td>Layout, components, utilities</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>2</td>
+              <td>Intermediate</td>
+              <td>Component-based UI</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="qualify" class="pt-4">
+    <div class="container">
+      <h2 class="m-auto mb-4">Qualify</h1>
+        <div class="row g-1">
+          <div class="col-md-6">
+            <div class="img-container">
+              <img src="/assets/bebras2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="img-container">
+              <img src="/assets/bebras.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="img-container">
+              <img src="/assets/nsc.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="img-container">
+              <img src="/assets/robotic.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 d-none extra-img">
+            <div class="img-container">
+              <img src="/assets/codebotix.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+
+          <div class="col-md-6 d-none extra-img">
+            <div class="img-container">
+              <img src="/assets/data.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+
+          <div class="col-md-6 d-none extra-img">
+            <div class="img-container">
+              <img src="/assets/Arduino.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+
+          <div class="col-md-6 d-none extra-img">
+            <div class="img-container">
+              <img src="/assets/GTC1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 d-none extra-img">
+            <div class="img-container">
+              <img src="/assets/GTC2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 d-none extra-img">
+            <div class="img-container">
+              <img src="/assets/GTC3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 d-none extra-img">
+            <div class="img-container">
+              <img src="/assets/thaimooc1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 d-none extra-img">
+            <div class="img-container">
+              <img src="/assets/thaimooc2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+
+
+          <div class="d-flex justify-content-end m-auto" id="allQuali" style="cursor: pointer;">
+            <button class="btn btn-link text-muted fs-6 fs-md-5 sall">show all...</button>
+            <button class="btn btn-link text-muted fs-6 fs-md-5 smin d-none">show min...</button>
+
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="mb-3">Contact</h2>
+
+      <ul class="list-unstyled">
+        <li class="mb-2">Email: <a href="mailto:nkonghua@student.42bangkok.com">nkonghua@student.42bangkok.com</a></li>
+        <li class="mb-2">Phone: <a href="tel:+66000000000">+66 6366616666</a></li>
+        <li class="mb-2">GitHub: <a href="https://github.com/nippitch239" target="_blank">GitHub</a></li>
+      </ul>
+
+      <form onsubmit="return contactDemo(event)" class="row g-2 col-md-8">
+        <div class="col-md-6">
+          <input class="form-control" type="text" id="name" placeholder="ชื่อ" required>
+        </div>
+        <div class="col-md-6">
+          <input class="form-control" type="email" id="email" placeholder="อีเมล" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" id="message" rows="4" placeholder="ข้อความ"></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">ส่งข้อความ</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+<script>
+  const btn = document.getElementById("allQuali");
+  const extraImgs = document.querySelectorAll(".extra-img");
+
+  const btnChild = btn.querySelector('.sall');
+  const btnChild2 = btn.querySelector('.smin');
+
+  const qualify = document.getElementById("qualify");
+
+  btnChild.addEventListener("click", () => {
+    extraImgs.forEach(img => img.classList.remove("d-none"));
+    btnChild.classList.add("d-none");
+    btnChild2.classList.remove("d-none");
+  });
+
+  btnChild2.addEventListener("click", () => {
+
+    if (qualify) {
+      setTimeout(() => {
+        extraImgs.forEach(img => img.classList.add("d-none"));
+        btnChild.classList.remove("d-none");
+        btnChild2.classList.add("d-none");
+      }, 500);
+    }
+    qualify.scrollIntoView({ behavior: "smooth", block: "start" });
+
+
+  });
+
+
+</script>
+
+</html>
